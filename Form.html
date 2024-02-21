@@ -1,0 +1,51 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>appoinment form</title>
+    <style>
+        .container {
+          width: 80%;
+          margin: 0 auto;
+          background: linear-gradient(to right, #e2bc11, #381522);
+        
+          padding: 80px;
+        }
+    
+        .box {
+          width: 40%;
+          margin: 10px auto;
+          background-color: #ddd;
+          padding: 8px;
+        }
+      </style>
+</head>
+<body style="text-align:left">
+    <div class="container">
+        <h1>Book appoinment</h1><br >
+    
+        <form action="taken app.html" method="POST">
+            <label>Vetarian:</label>
+                <select name="vetarian">
+                    <option name="vet A">Vet A</option>
+                    <option name="vet A">Vet B</option>
+                    <option name="vet A">Vet c</option>
+                    <option name="vet A">Vet D</option>
+                </select>
+            <br ><br >
+            <label>Name:</label>
+                <input type="text" style="display: inline-block;" name="Name" required><br ><br >
+            <label>Date:</label>
+                <input type="date" style="display: inline-block;" name="Date" required><br ><br >
+            <label>Time:</label>
+                <input type="time" style="display: inline-block;" name="Time" required><br ><br >
+            <label>Phone Number:</label>
+                <input type="int" name="PhoneNumber" pattern="[0-9]{10}" placeholder="1234-567-890"><br ><br >
+            <label>Your message:</label>
+                <textarea name="message"></textarea><br ><br >
+            <input type="submit" name="submit" value="submit">
+            <input type="reset" name="cancel" value="cancel">
+        </form>
+    </div>
+</body>
+</html>
